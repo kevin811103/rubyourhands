@@ -1,65 +1,38 @@
 <template>
-  <section class="container">
     <div>
-      <app-logo/>
-      <h1 class="title">
-        rubyourhands
-      </h1>
-      <h2 class="subtitle">
-        rubyouhandssite
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
+        <div style=" position: absolute;left:50%;top:50%">
+            <Button type="success" @click="login" size="large" icon="paper-airplane">進入</Button>
+        </div>
+
     </div>
-  </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
-
+import packageJson from '~/package.json'
 export default {
-  components: {
-    AppLogo
-  }
-}
+    components: {},
+    mounted() {
+        console.log(
+            `%c rubyourhands %c Detected Version v${
+                packageJson.version
+            } %c`,
+            'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
+            'background:#2d8cf0 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
+            'background:transparent'
+        )
+
+    },
+    methods: {
+        login(){
+    this.$router.push('/TestPage')
+    }
+    }
+    }
 </script>
 
 <style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.one {
+    border-style: solid;
+    border-width: 5px;
 }
 </style>
-

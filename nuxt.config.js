@@ -9,14 +9,29 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'rubyouhandssite' }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: '~/components/loading.vue',
+  /*
+   ** Global CSS
+   */
+  css: [
+    {
+      src: '@assets/style/index.less',
+      lang: 'less'
+    }
+  ],
+  /*
+   ** Plugins
+   */
+  plugins: [
+    {
+      src: '@plugins/iview.js'
+    }
+  ],
   /*
   ** Build configuration
   */
@@ -24,7 +39,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
+    extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
@@ -36,4 +51,3 @@ module.exports = {
     }
   }
 }
-
