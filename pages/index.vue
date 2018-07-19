@@ -8,31 +8,28 @@
 </template>
 
 <script>
-import packageJson from '~/package.json'
+import packageJson from "~/package.json";
 export default {
-    components: {},
-    mounted() {
-        console.log(
-            `%c rubyourhands %c Detected Version v${
-                packageJson.version
-            } %c`,
-            'background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff',
-            'background:#2d8cf0 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff',
-            'background:transparent'
-        )
-
-    },
-    methods: {
-        login(){
-    this.$router.push('/TestPage')
+  components: {},
+  mounted() {
+    console.log(
+      `%c rubyourhands %c Detected Version v${packageJson.version} %c`,
+      "background:#35495e ; padding: 1px; border-radius: 3px 0 0 3px;  color: #fff",
+      "background:#2d8cf0 ; padding: 1px; border-radius: 0 3px 3px 0;  color: #fff",
+      "background:transparent"
+    );
+  },
+  methods: {
+    login() {
+      this.$router.push("/question");
     }
-    }
-    }
+  }
+};
 </script>
 
 <style>
 .one {
-    border-style: solid;
-    border-width: 5px;
+  border-style: solid;
+  border-width: 5px;
 }
 </style>
