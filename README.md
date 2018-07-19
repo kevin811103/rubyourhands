@@ -25,3 +25,7 @@ For detailed explanation on how things work, checkout the [Nuxt.js docs](https:/
 
 $ yarn generate
 $ yarn deploy
+
+# use website
+
+# http://rubyouyhands.nctu.me/
