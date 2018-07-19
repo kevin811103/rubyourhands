@@ -3,25 +3,25 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'rubyourhands',
+    title: "rubyourhands",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'rubyouhandssite' }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { hid: "description", name: "description", content: "rubyouhandssite" }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
   /*
   ** Customize the progress bar color
   */
-  loading: '~/components/loading.vue',
+  loading: "~/components/loading.vue",
   /*
    ** Global CSS
    */
   css: [
     {
-      src: '@assets/style/index.less',
-      lang: 'less'
+      src: "@assets/style/index.less",
+      lang: "less"
     }
   ],
   /*
@@ -29,7 +29,7 @@ module.exports = {
    */
   plugins: [
     {
-      src: '@plugins/iview.js'
+      src: "@plugins/iview.js"
     }
   ],
   /*
@@ -42,12 +42,12 @@ module.exports = {
     extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
-          enforce: 'pre',
+          enforce: "pre",
           test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
+          loader: "eslint-loader",
           exclude: /(node_modules)/
-        })
+        });
       }
     }
   }
-}
+};
