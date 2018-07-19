@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>回答問題</p>
+        <p>回答問題喔</p>
     </div>
 </template>
 <script>
