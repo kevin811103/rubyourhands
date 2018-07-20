@@ -13,7 +13,7 @@
          <div style="margin-left:100px">                    </div>
                 <div style="margin-left:100px">
                    <span style="width:300px">
-        <Carousel autoplay v-model="value2" dots="none" arrow="never" autoplay-speed="5000" loop>
+        <Carousel autoplay v-model="value2" dots="none" arrow="never" :autoplay-speed="speed" loop>
         <CarouselItem>
             <div class="demo-carousel">人若軟弱就是自己最大的敵人;人若勇敢就是自己最好的朋友。</div>
         </CarouselItem>
@@ -36,7 +36,8 @@ import { MenuItem } from "iview";
 export default {
   data() {
     return {
-      value2: 0
+      value2: 0,
+      speed: 5000
     };
   },
   components: {

@@ -24,6 +24,14 @@ module.exports = {
       lang: "less"
     }
   ],
+  modules: ["@nuxtjs/axios"],
+  axios: {
+    proxy: true
+    // proxyHeaders: false
+  },
+  proxy: {
+    "/api/": "https://opendata.cwb.gov.tw/"
+  },
   /*
    ** Plugins
    */

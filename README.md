@@ -29,3 +29,5 @@ $ yarn deploy
 # use website
 
 # http://rubyouyhands.nctu.me/
+
+#氣象局 api 打法 #http://opendata.cwb.gov.tw/opendatadoc/CWB_Opendata_API_V1.2.pdf

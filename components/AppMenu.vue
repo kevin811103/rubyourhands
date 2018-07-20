@@ -21,6 +21,17 @@
                 <span>新增問題</span>
             </i-menuItem>
         </Submenu>
+                <Submenu name="use">
+            <template slot="title">
+                <Icon type="person"></Icon>
+               小功能
+            </template>
+            <!-- MENU ITEMS -->
+            <i-menuItem name="weather" @click.native="routerPush('/weather')">
+                <span>36h天氣預報</span>
+            </i-menuItem>
+
+        </Submenu>
     </Menu>
 </template>
 <script>
