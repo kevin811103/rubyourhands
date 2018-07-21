@@ -24,6 +24,7 @@ module.exports = {
       lang: "less"
     }
   ],
+
   modules: ["@nuxtjs/axios"],
   axios: {
     proxy: true
@@ -40,6 +41,7 @@ module.exports = {
       src: "@plugins/iview.js"
     }
   ],
+
   /*
   ** Build configuration
   */
