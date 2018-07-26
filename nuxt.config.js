@@ -56,6 +56,10 @@ module.exports = {
   plugins: [
     {
       src: '@plugins/iview.js'
+    },
+    {
+      src: '@plugins/waterfall.js',
+      ssr: false
     }
   ],
 

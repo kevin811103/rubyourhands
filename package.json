@@ -26,6 +26,7 @@
     "less-loader": "^4.1.0",
     "nuxt": "^1.0.0",
     "standard": "^11.0.1",
+    "vue-waterfall": "^1.0.6",
     "vuetable": "^1.5.12"
   },
   "devDependencies": {
