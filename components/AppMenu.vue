@@ -35,6 +35,10 @@
             <i-menuItem name="well" @click.native="routerPush('/well')">
                 <span>瀑布流</span>
             </i-menuItem>
+            <i-menuItem name="sadman" @click.native="routerPush('/sadman')">
+                <span>傷心人</span>
+            </i-menuItem>
+            
         </Submenu>
     </Menu>
 </template>

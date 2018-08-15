@@ -1,7 +1,5 @@
 <template>
     <div>
-        iiii
-
         <ul>
             <li><img src="http://unimap.wingzero.tw/uniform/taipei/cmgsh/14882946380_1_thumb.jpg" alt=""></li>
             <li><img src="http://unimap.wingzero.tw/uniform/taoyuan/tysh/14861091270_1_thumb.jpeg" alt=""></li>
