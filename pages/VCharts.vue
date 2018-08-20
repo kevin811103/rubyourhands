@@ -1,7 +1,7 @@
 
 
 <template>
-
+    <!-- https://v-charts.js.org/#/candle -->
     <!-- 要使用各種圖表就要將各種圖表的 資料tag import 到v-charts.js 內 -->
     <div>
         <div>
