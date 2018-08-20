@@ -60,6 +60,10 @@ module.exports = {
     {
       src: '@plugins/waterfall.js',
       ssr: false
+    },
+    {
+      src: '@plugins/v-charts.js',
+      ssr: false
     }
   ],
 

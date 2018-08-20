@@ -22,11 +22,13 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
+    "echarts": "^4.1.0",
     "iview": "^2.14.3",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "nuxt": "^1.0.0",
     "standard": "^11.0.1",
+    "v-charts": "^1.17.10",
     "vue-waterfall": "^1.0.6",
     "vuetable": "^1.5.12"
   },
