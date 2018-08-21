@@ -38,10 +38,12 @@
             <i-menuItem name="sadman" @click.native="routerPush('/sadman')">
                 <span>傷心人</span>
             </i-menuItem>
-            <i-menuItem name="sadman" @click.native="routerPush('/circel')">
+            <i-menuItem name="circel" @click.native="routerPush('/circel')">
                 <span>圈圈</span>
             </i-menuItem>
-
+            <i-menuItem name="vcharts" @click.native="routerPush('/vcharts')">
+                <span>vcharts</span>
+            </i-menuItem>
         </Submenu>
     </Menu>
 </template>
