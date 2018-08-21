@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "start": "pm2 start ./node_modules/nuxt/bin/nuxt-start -i max --attach",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
@@ -17,7 +17,7 @@
   "config": {
     "nuxt": {
       "host": "0.0.0.0",
-      "port": "30678"
+      "port": "12345"
     }
   },
   "dependencies": {
@@ -26,6 +26,7 @@
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
     "nuxt": "^1.0.0",
+    "pm2": "^3.0.3",
     "standard": "^11.0.1",
     "vue-waterfall": "^1.0.6",
     "vuetable": "^1.5.12"
