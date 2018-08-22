@@ -1,21 +1,22 @@
 
 
 <template>
-    <!-- https://v-charts.js.org/#/candle -->
-    <!-- 要使用各種圖表就要將各種圖表的 資料tag import 到v-charts.js 內 -->
+  <!-- https://v-charts.js.org/#/candle -->
+  <!-- 要使用各種圖表就要將各種圖表的 資料tag import 到v-charts.js 內 -->
+  <div>
     <div>
-        <div>
-            <ve-line :data="chartData"></ve-line>
-        </div>
-
-        <div>
-            <ve-candle :data="chartData2"></ve-candle>
-        </div>
+      <ve-line :data="chartData"></ve-line>
     </div>
+
+    <div>
+      <ve-candle :data="chartData2"></ve-candle>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
+   layout: "barMenu",
  data: function () {
       return {
         chartData: {

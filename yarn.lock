@@ -3920,9 +3920,9 @@ isurl@^1.0.0-alpha5:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
 
-iview@^2.14.3:
-  version "2.14.3"
-  resolved "https://registry.yarnpkg.com/iview/-/iview-2.14.3.tgz#0f32a450f956cce2ac60a4df5a6eba30816a0708"
+iview@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/iview/-/iview-3.0.1.tgz#705128658d102ff4f85b0015e49477c23b1967bf"
   dependencies:
     async-validator "^1.8.2"
     deepmerge "^2.1.0"

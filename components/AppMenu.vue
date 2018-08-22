@@ -44,6 +44,9 @@
             <i-menuItem name="vcharts" @click.native="routerPush('/vcharts')">
                 <span>vcharts</span>
             </i-menuItem>
+            <i-menuItem name="tomato" @click.native="routerPush('/tomato')">
+                <span>番茄鐘</span>
+            </i-menuItem>
         </Submenu>
     </Menu>
 </template>
