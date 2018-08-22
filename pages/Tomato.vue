@@ -90,8 +90,10 @@ export default {
         if(this.countTime===0){
           let testaudio=document.getElementById("testaudio")
           testaudio.play();
-          this.start=false
+
                 clearInterval(this.time)
+                          this.countTime=this.setTimeText*60
+          this.start=false
             // setTimeout(()=>{
             //   this.audio.pause()
             // },22) 
