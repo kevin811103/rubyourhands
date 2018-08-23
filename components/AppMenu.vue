@@ -47,6 +47,10 @@
             <i-menuItem name="tomato" @click.native="routerPush('/tomato')">
                 <span>番茄鐘</span>
             </i-menuItem>
+            <i-menuItem name="Dog" @click.native="routerPush('/dog')">
+                <span>dog</span>
+            </i-menuItem>
+
         </Submenu>
     </Menu>
 </template>
