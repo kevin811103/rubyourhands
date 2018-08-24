@@ -52,6 +52,18 @@
             </i-menuItem>
 
         </Submenu>
+        <Submenu name="csstest">
+            <template slot="title">
+                <Icon type="person"></Icon>
+                csstest
+            </template>
+            <!-- MENU ITEMS -->
+            <i-menuItem name="css1" @click.native="routerPush('/csstest/css1')">
+                <span>css1</span>
+            </i-menuItem>
+
+        </Submenu>
+
     </Menu>
 </template>
 <script>
