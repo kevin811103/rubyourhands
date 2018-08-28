@@ -36,7 +36,7 @@ export default {
 </script>
 <style lang="less" scoped>
 .header {
-  padding: 0;
-  height: 50px;
+    padding: 0;
+    height: 50px;
 }
 </style>

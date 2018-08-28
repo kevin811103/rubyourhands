@@ -50,6 +50,9 @@
             <i-menuItem name="Dog" @click.native="routerPush('/dog')">
                 <span>dog</span>
             </i-menuItem>
+            <i-menuItem name="Vueawesome" @click.native="routerPush('/vueawesome')">
+                <span>Vueawesome</span>
+            </i-menuItem>
 
         </Submenu>
         <Submenu name="csstest">

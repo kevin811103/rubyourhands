@@ -22,7 +22,8 @@ module.exports = {
     {
       src: '@assets/style/index.less',
       lang: 'less'
-    }
+    },
+    'swiper/dist/css/swiper.css'
   ],
   /*
    ** router
@@ -64,7 +65,8 @@ module.exports = {
     {
       src: '@plugins/v-charts.js',
       ssr: false
-    }
+    },
+    { src: '~/plugins/swiper.js', ssr: false }
   ],
 
   /*
