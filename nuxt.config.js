@@ -66,7 +66,8 @@ module.exports = {
       src: '@plugins/v-charts.js',
       ssr: false
     },
-    { src: '~/plugins/swiper.js', ssr: false }
+    { src: '~/plugins/swiper.js', ssr: false },
+    { src: '~/plugins/vuedraggable.js', ssr: false }
   ],
 
   /*
