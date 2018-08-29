@@ -67,7 +67,8 @@ module.exports = {
       ssr: false
     },
     { src: '~/plugins/swiper.js', ssr: false },
-    { src: '~/plugins/vuedraggable.js', ssr: false }
+    { src: '~/plugins/vuedraggable.js', ssr: false },
+    { src: '~/plugins/vue-swal.js' }
   ],
 
   /*
@@ -77,6 +78,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
+
     extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
@@ -86,6 +88,10 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    /*
+** Add vue-swal
+*/
+    vendor: ['vue-swal']
   }
 }

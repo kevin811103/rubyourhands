@@ -56,6 +56,10 @@
             <i-menuItem name="vueDraggable" @click.native="routerPush('/vueDraggable')">
                 <span>vueDraggable</span>
             </i-menuItem>
+            <i-menuItem name="Sweetalert2" @click.native="routerPush('/sweetalert2')">
+                <span>Sweetalert2</span>
+            </i-menuItem>
+
         </Submenu>
         <Submenu name="csstest">
             <template slot="title">
