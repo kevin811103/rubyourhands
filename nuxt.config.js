@@ -72,7 +72,10 @@ module.exports = {
     },
     { src: '~/plugins/swiper.js', ssr: false },
     { src: '~/plugins/vuedraggable.js', ssr: false },
-    { src: '~/plugins/vue-swal.js' }
+    { src: '~/plugins/vue-swal.js' },
+    {
+      src: '~plugins/ant-design-vue.js'
+    }
   ],
 
   /*

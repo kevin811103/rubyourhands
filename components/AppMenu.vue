@@ -65,6 +65,9 @@
             <i-menuItem name="postAddress" @click.native="routerPush('/postAddress')">
                 <span>postAddress</span>
             </i-menuItem>
+            <i-menuItem name="antDesign" @click.native="routerPush('/antDesign')">
+                <span>AntDesign</span>
+            </i-menuItem>
 
         </Submenu>
         <Submenu name="csstest">
