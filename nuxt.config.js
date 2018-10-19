@@ -43,7 +43,7 @@ module.exports = {
   /*
    ** modules
    */
-  modules: ['@nuxtjs/axios'],
+  modules: ['@nuxtjs/axios', ['@nuxtjs/moment',['zh-tw']]],
   axios: {
     proxy: true
     // proxyHeaders: false

@@ -23,6 +23,17 @@
                 <span>新增問題</span>
             </i-menuItem>
         </Submenu>
+
+        <Submenu name="classsche">
+            <template slot="title">
+                <Icon type="ios-alarm"></Icon>
+                家明班表
+            </template>
+            <!-- MENU ITEMS -->
+            <i-menuItem name="classsche" @click.native="routerPush('/classsche')">
+                <span>家明班表</span>
+            </i-menuItem>
+        </Submenu>
         <Submenu name="use">
             <template slot="title">
                 <Icon type="person"></Icon>

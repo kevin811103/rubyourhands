@@ -49,78 +49,72 @@
 </template>
 
 <script>
-import timeChange from '~/mixins/filiterRule'
+import timeChange from "~/mixins/filiterRule";
 export default {
-    mixins:[timeChange],
-         layout: "barMenu",
- data() {
+  mixins: [timeChange],
+  layout: "barMenu",
+  data() {
     return {
-        setTimeText:15,
-     countTime:900,
-     start:false,
-     time:null,
-     countMin:0,
-     countSec:0
-    }
-
-},
-     components: {},
-        mounted() {
-     
+      setTimeText: 15,
+      countTime: 900,
+      start: false,
+      time: null,
+      countMin: 0,
+      countSec: 0
+    };
   },
+  components: {},
+  mounted() {},
   methods: {
-     addmin(){
-            this.setTimeText++
-            },
-          minmin(){
-  this.setTimeText--
-              },
-      startPlay(){
-          this.start=true
-// 開始
-      },
-      pausePlay(){
-        //   結束
-        this.start=false
-      },
+    addmin() {
+      this.setTimeText++;
+    },
+    minmin() {
+      this.setTimeText--;
+    },
+    startPlay() {
+      this.start = true;
+      // 開始
+    },
+    pausePlay() {
+      //   結束
+      this.start = false;
+    },
     timer() {
       this.time = setInterval(() => {
         // do something...
-        this.countTime--
-        if(this.countTime===0){
-          let testaudio=document.getElementById("testaudio")
+        this.countTime--;
+        if (this.countTime === 0) {
+          let testaudio = document.getElementById("testaudio");
           testaudio.play();
 
-                clearInterval(this.time)
-                          this.countTime=this.setTimeText*60
-          this.start=false
-            // setTimeout(()=>{
-            //   this.audio.pause()
-            // },22) 
-
+          clearInterval(this.time);
+          this.countTime = this.setTimeText * 60;
+          this.start = false;
+          // setTimeout(()=>{
+          //   this.audio.pause()
+          // },22)
         }
-      }, 1000)
+      }, 1000);
     }
   },
-  watch:{  
-      setTimeText(){
-          this.countTime=this.setTimeText*60
-      },
-      start(val){
-            
-          console.log('watch/start',val)
-          if(val)
-          {
-            //   繼續倒數
-            
-          this.timer()
-          }else{
-          clearInterval(this.time)
-            //   暫停倒數
-          }
+  watch: {
+    setTimeText() {
+      this.countTime = this.setTimeText * 60;
+    },
+    start(val) {
+      console.log("watch/start", val);
+      if (val) {
+        //   繼續倒數
+
+        this.timer();
+      } else {
+        clearInterval(this.time);
+        //   暫停倒數
       }
+    }
   }
-}
+};
 </script>
 
 <style>
