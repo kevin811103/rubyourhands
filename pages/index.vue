@@ -22,7 +22,7 @@ export default {
     },
     methods: {
         login() {
-            this.$router.push('/question')
+            this.$router.push('/classsche')
         }
     }
 }
