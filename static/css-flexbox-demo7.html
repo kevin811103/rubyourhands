@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="oxxo.studio">
+	<meta name="copyright" content="oxxo.studio">
+	<title>深入解析 CSS Flexbox demo7 - OXXO.STUDIO</title>
+</head>
+<style>
+	body {
+		margin: 20px;
+		font-family: "Verdana";
+		font-size: 12px;
+		color: #fff;
+	}
+
+	.nowrap,
+	.wrap,
+	.wrap-reverse {
+		display: inline-flex;
+		flex-wrap: wrap;
+		width: 180px;
+		height: 80px;
+		margin: 5px 5px 40px;
+		border: 1px solid #000;
+		vertical-align: top;
+	}
+
+	.column {
+		flex-direction: column;
+		width: 120px;
+		height: 180px;
+	}
+
+	.nowrap {
+		flex-wrap: nowrap;
+	}
+
+	.wrap {
+		flex-wrap: wrap;
+	}
+
+	.wrap-reverse {
+		flex-wrap: wrap-reverse;
+	}
+
+	.align-content div {
+		width: 30px;
+		height: 30px;
+		margin: 5px;
+		background: #069;
+	}
+
+	.column div {
+		background: #f50;
+	}
+</style>
+
+<body>
+	<div class="nowrap align-content">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+	<div class="wrap align-content">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+	<div class="wrap-reverse align-content">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+	<div class="nowrap column align-content">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+	<div class="wrap column align-content">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+	<div class="wrap-reverse column align-content">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+	<span>
+
+
+		<style>
+			#info {
+				position: fixed;
+				z-index: 999;
+				bottom: 20px;
+				left: 0px;
+				background: #222;
+				padding: 20px 30px;
+				color: #fff;
+				box-shadow: rgba(0, 0, 0, .5) 0 0 10px;
+				border-radius: 0 5px 5px 0;
+				font-size: 16px;
+			}
+
+			#info a {
+				color: #0bf;
+				transition: .2s;
+			}
+
+			#info a:hover {
+				color: #6df;
+			}
+		</style>
+		<div id="info">相關參考：<a id="infoLink" href="#" target="_blank"></a></div>
+		<script>
+			var href = location.href;
+			var page = href.split("demo/");
+			var name = page[1].split("-demo")[0];
+			var title = document.querySelector('title').innerHTML;
+			document.getElementById('infoLink').setAttribute('href', '/articles/' + name + '.html');
+			document.getElementById('infoLink').innerHTML = title.split("demo")[0];
+		</script>
+</body>
+
+</html>

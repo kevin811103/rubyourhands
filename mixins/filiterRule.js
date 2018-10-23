@@ -23,6 +23,10 @@ export default {
         case "sn":
           return "小夜班";
           break;
+        case "space":
+          return "";
+          break;
+
         default:
           return "我不知道";
           break;

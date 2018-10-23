@@ -6,14 +6,21 @@
         <DatePicker v-model="chooseDate" format="yyyy年MM月dd日" type="date" placeholder="看你要查哪一天" style="width: 200px"  @on-change="queryType"></DatePicker>
         {{whitchType|classChang}}
         
-        <div>
+        <!-- <div>
               <Button type="success" @click="test" size="large" icon="paper-airplane">test</Button>
             
+        </div> -->
+
+        <div>
+       
+          <Button type="info" @click="test1" size="large" icon="paper-airplane">去日歷</Button>
+        
         </div>
     </div>
 </template>
 
 <script>
+// https://zhuanlan.zhihu.com/p/26401052
 import moment from "moment";
 import classChang from "~/mixins/filiterRule";
 export default {
@@ -35,8 +42,6 @@ export default {
             { d: "4", type: "sn" },
             { d: "5", type: "sn" },
             { d: "6", type: "v" }
-        
-
           ]
         },
         {
@@ -92,8 +97,8 @@ export default {
       let a = moment().format("MMMM Do YYYY, h:mm:ss a");
       console.log("a", a);
       let w = moment().format("W");
-      console.log("今年的第幾周", (w-1));
-      console.log("以四周取餘之後", (w-1) % 4);
+      console.log("今年的第幾周", w - 1);
+      console.log("以四周取餘之後", (w - 1) % 4);
       let d = moment().format("d");
       console.log("一周的第幾天", d);
 
@@ -104,11 +109,11 @@ export default {
     },
     getWD(date) {
       let w = moment(date).format("W");
-      console.log("今年的第幾周", (w-1));
-      console.log("以四周取餘之後", (w-1) % 4);
+      console.log("今年的第幾周", w - 1);
+      console.log("以四周取餘之後", (w - 1) % 4);
       let d = moment(date).format("d");
       console.log("一周的第幾天", d);
-      this.getType((w-1), d);
+      this.getType(w - 1, d);
     },
     getType(w, d) {
       this.scheduledArray.forEach(data => {
@@ -121,6 +126,9 @@ export default {
           : "";
       });
       console.log("甚麼班", this.whitchType);
+    },
+    test1() {
+      this.$router.push("/calender");
     }
   }
 };
