@@ -16,6 +16,39 @@
           <Button type="info" @click="test1" size="large" icon="paper-airplane">去日歷</Button>
         
         </div>
+
+        <div class="flex-b">
+            <div>
+1
+            </div>
+                        <div>
+1
+            </div>
+                        <div>
+1
+            </div>
+                        <div>
+1
+            </div>
+                        <div>
+1
+            </div>
+                        <div>
+1
+            </div>
+                        <div>
+1
+            </div>
+                        <div>
+1
+            </div>
+                        <div>
+1
+            </div>
+                        <div>
+1
+            </div>
+        </div>
     </div>
 </template>
 
@@ -135,4 +168,11 @@ export default {
 </script>
 
 <style>
+.flex-b {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-b div {
+  width: 14.28%;
+}
 </style>
