@@ -33,3 +33,9 @@ $ yarn deploy
 #氣象局 api 打法 #http://opendata.cwb.gov.tw/opendatadoc/CWB_Opendata_API_V1.2.pdf
 
 # https://surmon-china.github.io/vue-awesome-swiper/
+
+# about stop server
+
+```
+$ pm2 stop start-nuxt
+```
