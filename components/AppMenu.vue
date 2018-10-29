@@ -79,6 +79,9 @@
             <i-menuItem name="antDesign" @click.native="routerPush('/antDesign')">
                 <span>AntDesign</span>
             </i-menuItem>
+            <i-menuItem name="backgroundAttachment" @click.native="routerPush('/backgroundAttachment')">
+                <span>background-attachment</span>
+            </i-menuItem>
 
         </Submenu>
         <Submenu name="csstest">
@@ -108,16 +111,16 @@ export default {
 </script>
 <style lang="less" scoped>
 .menu {
-    height: 100vh;
-    overflow: auto;
+  height: 100vh;
+  overflow: auto;
 }
 .menu-title {
-    color: #fff;
-    padding: 0.8rem 0.8rem 0.2rem 0.8rem;
-    height: 50px;
-    cursor: pointer;
-    h2 {
-        font-weight: normal;
-    }
+  color: #fff;
+  padding: 0.8rem 0.8rem 0.2rem 0.8rem;
+  height: 50px;
+  cursor: pointer;
+  h2 {
+    font-weight: normal;
+  }
 }
 </style>

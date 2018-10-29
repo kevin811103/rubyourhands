@@ -17,38 +17,6 @@
         
         </div>
 
-        <div class="flex-b">
-            <div>
-1
-            </div>
-                        <div>
-1
-            </div>
-                        <div>
-1
-            </div>
-                        <div>
-1
-            </div>
-                        <div>
-1
-            </div>
-                        <div>
-1
-            </div>
-                        <div>
-1
-            </div>
-                        <div>
-1
-            </div>
-                        <div>
-1
-            </div>
-                        <div>
-1
-            </div>
-        </div>
     </div>
 </template>
 

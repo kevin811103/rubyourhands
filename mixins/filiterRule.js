@@ -28,7 +28,7 @@ export default {
           break;
 
         default:
-          return "我不知道";
+          return "請選擇";
           break;
       }
     }
