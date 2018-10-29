@@ -5,7 +5,7 @@ module.exports = {
   head: {
     title: 'rubyourhands',
     htmlAttrs: {
-      lang="zh-Hant-TW"
+     lang="zh-TW"
       // 不設定會一直跑出翻譯 
       // https://www.injerry.com/blog-view.php?PID=5&sn=125
     },
