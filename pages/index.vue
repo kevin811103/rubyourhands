@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     login() {
-      this.$router.push("/classsche");
+      this.$router.push("/Calender");
     },
     other() {
       this.$router.push("/dog");

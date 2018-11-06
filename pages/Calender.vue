@@ -1,103 +1,103 @@
 <template>
-    <div >
-        <!-- <div style="margin-top:20px">
- <Row :gutter="16">
-     <iCol span="3" style="color:white">你看不到我</iCol>
-            <iCol span="3"  class="tt"> {{yearString}}</iCol>
-      <iCol span="3"  class="tt"> {{monthString}}</iCol>
- </Row>
-       
-        <Row :gutter="16">
-            <iCol span="3" style="color:white">你看不到我</iCol>
-            <iCol span="3"  class="tt">星期日</iCol>
-            <iCol span="3" class="tt">星期一</iCol>
-            <iCol span="3"  class="tt">星期二</iCol>
-            <iCol span="3"  class="tt">星期三</iCol>
-            <iCol span="3"  class="tt">星期四</iCol>
-            <iCol span="3"  class="tt">星期五</iCol>
-            <iCol span="3"  class="tt">星期六</iCol>
-     
-        </Row>
- 
-         <Row :gutter="16">
-             <span v-for="(day,index) in dayNumberArray" :value="index" :key="index" >
+	<div>
+		<!-- <div style="margin-top:20px">
+	  <Row :gutter="16">
+		  <iCol span="3" style="color:white">你看不到我</iCol>
+				 <iCol span="3"  class="tt"> {{yearString}}</iCol>
+		   <iCol span="3"  class="tt"> {{monthString}}</iCol>
+	  </Row>
+			
+			 <Row :gutter="16">
+				 <iCol span="3" style="color:white">你看不到我</iCol>
+				 <iCol span="3"  class="tt">星期日</iCol>
+				 <iCol span="3" class="tt">星期一</iCol>
+				 <iCol span="3"  class="tt">星期二</iCol>
+				 <iCol span="3"  class="tt">星期三</iCol>
+				 <iCol span="3"  class="tt">星期四</iCol>
+				 <iCol span="3"  class="tt">星期五</iCol>
+				 <iCol span="3"  class="tt">星期六</iCol>
+		  
+			 </Row>
+	  
+			  <Row :gutter="16">
+				  <span v-for="(day,index) in dayNumberArray" :value="index" :key="index" >
+	 
+					  <span v-if="index%7===0">
+						 <iCol span="3" push="3"><span style="color:white"> 1</span></iCol>
+					  </span>
+						<iCol span="3"  class="tt" v-bind:class="day.today?'is-today':''">
+							<div v-if="day.class!=='space'">
+								<div>
+									 {{day.day}}
+								</div>
+								  <div v-bind:class="day.class">
+									  {{day.class|classChang}}
+								  </div>
+							   
+							</div>
+							<div v-else style="color:white">
+	 <div>
+		 
+	 11
+	 </div>
+	 <div>11</div>
+							</div>
+						</iCol>
+							 </span>
+		
+		  
+			 </Row>
+			 </div> -->
 
-                 <span v-if="index%7===0">
-                    <iCol span="3" push="3"><span style="color:white"> 1</span></iCol>
-                 </span>
-                   <iCol span="3"  class="tt" v-bind:class="day.today?'is-today':''">
-                       <div v-if="day.class!=='space'">
-                           <div>
-                                {{day.day}}
-                           </div>
-                             <div v-bind:class="day.class">
-                                 {{day.class|classChang}}
-                             </div>
-                          
-                       </div>
-                       <div v-else style="color:white">
-<div>
-    
-11
-</div>
-<div>11</div>
-                       </div>
-                   </iCol>
-                        </span>
-   
-     
-        </Row>
-        </div> -->
+		<div>
+			<div style="display:flex">
+				<div class="tt" stlye="width:40%;"><span style="font-size:31px">
+						{{yearString}}</span> </div>
+				<div class="tt" stlye="width:40%;"> <span style="font-size:31px"> {{monthString}}</span></div>
+			</div>
 
-        <div>
-          <div style="display:flex">
-               <div  class="tt" stlye="width:40%;"><span style="font-size:31px">  
-                 {{yearString}}</span> </div>
-           <div  class="tt" stlye="width:40%;"> <span style="font-size:31px">  {{monthString}}</span></div>
-          </div>
-             
-          <div class="flex-b ">
-            <div  class="tt">星期日</div>
-            <div class="tt">星期一</div>
-            <div  class="tt">星期二</div>
-            <div  class="tt">星期三</div>
-            <div  class="tt">星期四</div>
-            <div  class="tt">星期五</div>
-            <div  class="tt">星期六</div>
-          </div>
-          <div class="flex-b ">
-  <div v-for="(day,index) in dayNumberArray" :value="index" :key="index"   class="tt" v-bind:class="day.today?'is-today':''">
+			<div class="flex-b ">
+				<div class="tt">星期日</div>
+				<div class="tt">星期一</div>
+				<div class="tt">星期二</div>
+				<div class="tt">星期三</div>
+				<div class="tt">星期四</div>
+				<div class="tt">星期五</div>
+				<div class="tt">星期六</div>
+			</div>
+			<div class="flex-b ">
+				<div v-for="(day,index) in dayNumberArray" :value="index" :key="index" class="tt" style="cursor: pointer;" v-bind:class="day.today?'is-today':''" @click="showStubAlert">
 
-                 <span v-if="index%7===0">
-                    <div ><span style="color:white"> 1</span></div>
-                 </span>
-                   <div  >
-                       <div v-if="day.class!=='space'">
-                           <div>
-                                {{day.day}}
-                           </div>
-                             <div v-bind:class="day.class">
-                                 {{day.class|classChang}}
-                             </div>
+					<span v-if="index%7===0">
+						<div><span style="color:white"> 1</span></div>
+					</span>
+					<div>
+						<div v-if="day.class!=='space'" >
+							<div>
+								{{day.day}}
+							</div>
+							<div v-bind:class="day.class">
+								{{day.class|classChang}}
+							</div>
 
-                       </div>
-                       <div v-else style="color:white">
-<div>
-    
-11
-</div>
-<div>11</div>
-                       </div>
-                   </div>
-                        </div>
-          </div>
-        </div>
-        <div style="display:flex">
-            <Button type="info" @click="delMonth" style="margin-left:100px;width:50%">上個月</Button>
-            <Button type="info" @click="addMonth" style="margin-left:100px;width:50%">下個月</Button>
-        </div>
-        
-    </div>
+						</div>
+						<div v-else style="color:white">
+							<div>
+
+								11
+							</div>
+							<div>11</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="display:flex">
+			<Button type="info" @click="delMonth" style="margin-left:100px;width:50%">上個月</Button>
+			<Button type="info" @click="addMonth" style="margin-left:100px;width:50%">下個月</Button>
+		</div>
+
+	</div>
 </template>
 
 <script>
@@ -186,6 +186,12 @@ export default {
     };
   },
   methods: {
+    showStubAlert() {
+      this.$swal({
+        icon: "info",
+        text: "安安你智障嗎?"
+      });
+    },
     delMonth() {
       // 少一個月
       this.dayNumberArray = [];
