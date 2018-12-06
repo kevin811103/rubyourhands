@@ -20,6 +20,9 @@
       "port": "12345"
     }
   },
+ "engines": {
+  "node": "8"
+  },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
     "@nuxtjs/moment": "^1.0.0",
