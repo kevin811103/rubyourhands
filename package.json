@@ -21,7 +21,8 @@
     }
   },
  "engines": {
-  "node": "8"
+  "node": "8",
+    "npm" : "6.2.0" 
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
